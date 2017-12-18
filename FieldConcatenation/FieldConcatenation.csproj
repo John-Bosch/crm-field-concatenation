@@ -34,7 +34,42 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\Entity.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\card\{b9142363-ec07-4c04-83d6-e8f49df1916f}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\mainInteractionCentric\{7e3d1c7c-8e12-4aa2-84e4-d28dd591873a}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\main\{04441835-e4f4-44ba-91a7-6bc349031a39}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\mobile\{cdb3afd0-20bb-4a6e-ab63-9492b29ec47d}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\quick\{e5652333-a41b-49e7-8eb7-53ece98a4a8e}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\RibbonDiff.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{569ce72c-bf1f-4276-b67c-260d761ee1fe}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{5cc64b85-8290-456e-8ff9-4686d8450f5a}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{81d4683f-c648-4c8a-a7e7-9470a60806cf}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{c85f294f-880e-48c9-8f8b-65b5e17476d1}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{e1519771-92d1-43b6-832a-2a9541f1419c}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{f2a9ba08-5533-42c0-afae-30115d2d53c7}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{fd663c3a-501e-e711-80cd-000c29a009d2}.xml" />
+    <Content Include="Other\Customizations.xml" />
+    <Content Include="Other\Relationships.xml" />
+    <Content Include="Other\Relationships\Organization.xml" />
+    <Content Include="Other\Relationships\SystemUser.xml" />
+    <Content Include="Other\Solution.xml" />
+    <Content Include="PluginAssemblies\FieldConcatenationplugins-9A4F81D3-65AF-4A72-B7D1-8097F372D4D9\FieldConcatenationplugins.dll" />
+    <Content Include="PluginAssemblies\FieldConcatenationplugins-9A4F81D3-65AF-4A72-B7D1-8097F372D4D9\FieldConcatenationplugins.dll.data.xml" />
+    <Content Include="SdkMessageProcessingSteps\{46139b66-5b1e-e711-80cd-000c29a009d2}.xml" />
+    <Content Include="SdkMessageProcessingSteps\{545d5370-571e-e711-80cd-000c29a009d2}.xml" />
+    <Content Include="SdkMessageProcessingSteps\{c18a6085-5b1e-e711-80cd-000c29a009d2}.xml" />
+    <Content Include="SdkMessageProcessingSteps\{db294977-5b1e-e711-80cd-000c29a009d2}.xml" />
+    <Content Include="Workflows\LockEntityLogicalNameandFieldNameaftercreation-81F2905D-561E-E711-80CD-000C29A009D2.xaml.data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Workflows\LockEntityLogicalNameandFieldNameaftercreation-81F2905D-561E-E711-80CD-000C29A009D2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_Solutions\FieldConcatenation_1_0.zip" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" CustomizationLevel="1">
+  <IsolationMode>1</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/FieldConcatenationplugins-9A4F81D3-65AF-4A72-B7D1-8097F372D4D9/FieldConcatenationplugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="FieldConcatenation.plugins.ConcatenateFields, FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" Name="FieldConcatenation.plugins.ConcatenateFields">
+      <FriendlyName>f3ad87e0-18d1-43ed-b3bb-d690c6afb632</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="FieldConcatenation.plugins.ConfigurationChanges, FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" Name="FieldConcatenation.plugins.ConfigurationChanges">
+      <FriendlyName>0c23183c-caf3-4043-bb10-5ff293da4863</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="FieldConcatenation.plugins.ConfigurationNaming, FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" Name="FieldConcatenation.plugins.ConfigurationNaming">
+      <FriendlyName>49143dd4-ab7f-4ddf-b808-2be2b04b0b77</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

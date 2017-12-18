@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="lk_ver_fieldconcatenationconfiguration_createdby" />
+  <EntityRelationship Name="lk_ver_fieldconcatenationconfiguration_modifiedby" />
+  <EntityRelationship Name="organization_ver_fieldconcatenationconfiguration" />
+</EntityRelationships>

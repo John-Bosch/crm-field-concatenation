@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedquery>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>0</CanBeDeleted>
+  <isquickfindquery>0</isquickfindquery>
+  <isprivate>0</isprivate>
+  <isdefault>1</isdefault>
+  <returnedtypecode>10007</returnedtypecode>
+  <savedqueryid>{e1519771-92d1-43b6-832a-2a9541f1419c}</savedqueryid>
+  <layoutxml>
+    <grid name="resultset" object="10007" jump="ver_name" select="1" icon="1" preview="1">
+      <row name="result" id="ver_fieldconcatenationconfigurationid">
+        <cell name="ver_name" width="300" />
+        <cell name="createdon" width="125" />
+      </row>
+    </grid>
+  </layoutxml>
+  <querytype>1</querytype>
+  <fetchxml>
+    <fetch version="1.0" mapping="logical">
+      <entity name="ver_fieldconcatenationconfiguration">
+        <attribute name="ver_fieldconcatenationconfigurationid" />
+        <attribute name="ver_name" />
+        <attribute name="createdon" />
+        <order attribute="ver_name" descending="false" />
+      </entity>
+    </fetch>
+  </fetchxml>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <LocalizedNames>
+    <LocalizedName description="Field Concatenation Configuration Advanced Find View" languagecode="1033" />
+  </LocalizedNames>
+</savedquery>

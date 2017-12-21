@@ -1,4 +1,4 @@
-﻿using FieldConcatenation.plugins.CRM;
+﻿using Veritec.Crm.FieldConcatenation.plugins.CRM;
 using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Query;
@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace FieldConcatenation.plugins
+namespace Veritec.Crm.FieldConcatenation.plugins
 {
     public class ConcatenateFields : IPlugin
     {
@@ -105,7 +105,7 @@ namespace FieldConcatenation.plugins
 
             if (tokens.Any(t => changedAttributes.Contains(t.Name)))
             {
-                var result = FormatStringHelper.FormatString(formatString, tokens, changeEntity, preChangeEntity);
+                var result = FormatStringHelper.FormatString(service, formatString, tokens, changeEntity, preChangeEntity);
                 changeEntity.Attributes[fieldName] = result;
             }
         }

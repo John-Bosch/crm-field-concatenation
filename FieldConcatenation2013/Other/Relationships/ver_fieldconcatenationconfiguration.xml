@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_AsyncOperations">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>AsyncOperation</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>NoCascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the object with which the system job is associated." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>0</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Regarding" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_BulkDeleteFailures">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>BulkDeleteFailure</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the record that can not be deleted." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>0</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Name" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_DuplicateBaseRecord">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>DuplicateRecord</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>BaseRecordId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the base record." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="baserecordid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Base Record ID" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_DuplicateMatchingRecord">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>DuplicateRecord</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>DuplicateRecordId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the potential duplicate record." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="duplicaterecordid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Duplicate Record ID" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_PrincipalObjectAttributeAccesses">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>PrincipalObjectAttributeAccess</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the entity instance with shared secured field" languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="objectid" requiredlevel="systemrequired" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForForm|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Entity instance" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_ProcessSession">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>ProcessSession</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>NoCascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>RegardingObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the object with which the dialog session is associated." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="regardingobjectid" requiredlevel="none" imemode="auto" lookupstyle="single" lookupbrowse="0" format="regarding">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForGrid</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Regarding" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_UserEntityInstanceDatas">
+    <EntityRelationshipType>OneToMany</EntityRelationshipType>
+    <IsCustomizable>1</IsCustomizable>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <ReferencingEntityName>UserEntityInstanceData</ReferencingEntityName>
+    <ReferencedEntityName>ver_fieldconcatenationconfiguration</ReferencedEntityName>
+    <CascadeAssign>NoCascade</CascadeAssign>
+    <CascadeDelete>Cascade</CascadeDelete>
+    <CascadeReparent>NoCascade</CascadeReparent>
+    <CascadeShare>NoCascade</CascadeShare>
+    <CascadeUnshare>NoCascade</CascadeUnshare>
+    <ReferencingAttributeName>ObjectId</ReferencingAttributeName>
+    <RelationshipDescription>
+      <Descriptions>
+        <Description description="Unique identifier of the source record." languagecode="1033" />
+      </Descriptions>
+    </RelationshipDescription>
+    <field name="objectid" requiredlevel="systemrequired" imemode="auto" lookupstyle="single" lookupbrowse="0" format="">
+      <IsSecured>0</IsSecured>
+      <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid|RequiredForForm</DisplayMask>
+      <IsAuditEnabled>1</IsAuditEnabled>
+      <displaynames>
+        <displayname description="Object Id" languagecode="1033" />
+      </displaynames>
+    </field>
+  </EntityRelationship>
+</EntityRelationships>

@@ -1,8 +1,8 @@
-﻿using FieldConcatenation.plugins.CRM;
+﻿using Veritec.Crm.FieldConcatenation.plugins.CRM;
 using Microsoft.Xrm.Sdk;
 using System;
 
-namespace FieldConcatenation.plugins
+namespace Veritec.Crm.FieldConcatenation.plugins
 {
     public class ConfigurationNaming : IPlugin
     {

@@ -1,11 +1,13 @@
 ﻿using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Metadata;
+using Microsoft.Xrm.Sdk.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace FieldConcatenation.plugins
+namespace Veritec.Crm.FieldConcatenation.plugins
 {
     internal static class FormatStringHelper
     {
@@ -74,20 +76,20 @@ namespace FieldConcatenation.plugins
             return tokens;
         }
 
-        public static string FormatString(string formatString, IEnumerable<AttributeToken> tokens, Entity changeEntity, Entity preChangeEntity)
+        public static string FormatString(IOrganizationService service, string formatString, IEnumerable<AttributeToken> tokens, Entity changeEntity, Entity preChangeEntity)
         {
             var regex = new Regex(tokenRegex);
 
             var result = regex.Replace(formatString, match =>
             {
                 var token = tokens.Single(t => t.Name == AttributeName(match));
-                return GetFormattedAttribute(token, changeEntity, preChangeEntity);
+                return GetFormattedAttribute(service, token, changeEntity, preChangeEntity);
             });
 
             return result;
         }
 
-        private static string GetFormattedAttribute(AttributeToken token, Entity changeEntity, Entity preChangeEntity)
+        private static string GetFormattedAttribute(IOrganizationService service, AttributeToken token, Entity changeEntity, Entity preChangeEntity)
         {
             switch (token.AttributeMetadata.AttributeType)
             {
@@ -141,7 +143,7 @@ namespace FieldConcatenation.plugins
                     {
                         var value = GetAttributeValue<EntityReference>(token.Name, changeEntity, preChangeEntity);
                         return value != null
-                            ? value.Name
+                            ? (value.Name != null ? value.Name : GetEntityPrimaryNameAttributeValue(service, value))
                             : "<<null>>";
                     }
                 case AttributeTypeCode.Memo:
@@ -204,6 +206,21 @@ namespace FieldConcatenation.plugins
             return rawValue.HasValue
                 ? metadata.OptionSet.Options.Single(o => o.Value.Value == rawValue.Value).Label.UserLocalizedLabel.Label
                 : "<<null>>";
+        }
+
+        private static string GetEntityPrimaryNameAttributeValue(IOrganizationService service, EntityReference entityReference)
+        {
+            var metadataRequest = new RetrieveEntityRequest
+            {
+                EntityFilters = EntityFilters.Entity,
+                LogicalName = entityReference.LogicalName
+            };
+
+            var metadataResponse = (RetrieveEntityResponse)service.Execute(metadataRequest);
+            var metadata = metadataResponse.EntityMetadata;
+
+            var otherEntity = service.Retrieve(entityReference.LogicalName, entityReference.Id, new ColumnSet(metadata.PrimaryNameAttribute));
+            return GetAttributeValue<string>(metadata.PrimaryNameAttribute, otherEntity, null);
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xrm.Sdk.Metadata;
 using System;
 
-namespace FieldConcatenation.plugins
+namespace Veritec.Crm.FieldConcatenation.plugins
 {
     internal class AttributeToken : IEquatable<AttributeToken>
     {

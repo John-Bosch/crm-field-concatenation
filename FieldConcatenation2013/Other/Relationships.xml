@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="lk_ver_fieldconcatenationconfiguration_createdby" />
+  <EntityRelationship Name="lk_ver_fieldconcatenationconfiguration_modifiedby" />
+  <EntityRelationship Name="organization_ver_fieldconcatenationconfiguration" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_AsyncOperations" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_BulkDeleteFailures" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_DuplicateBaseRecord" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_DuplicateMatchingRecord" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_PrincipalObjectAttributeAccesses" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_ProcessSession" />
+  <EntityRelationship Name="ver_fieldconcatenationconfiguration_UserEntityInstanceDatas" />
+</EntityRelationships>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Veritec.Crm.FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" CustomizationLevel="1">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/VeritecCrmFieldConcatenationplugins-26B833C4-1146-4E26-8210-1667D06086EF/VeritecCrmFieldConcatenationplugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Veritec.Crm.FieldConcatenation.plugins.ConcatenateFields, Veritec.Crm.FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" Name="Veritec.Crm.FieldConcatenation.plugins.ConcatenateFields">
+      <FriendlyName>bc3a0b90-3142-46f8-954f-acad764169ff</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Veritec.Crm.FieldConcatenation.plugins.ConfigurationChanges, Veritec.Crm.FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" Name="Veritec.Crm.FieldConcatenation.plugins.ConfigurationChanges">
+      <FriendlyName>d47bb394-4676-432f-a240-cc00cd0314b4</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Veritec.Crm.FieldConcatenation.plugins.ConfigurationNaming, Veritec.Crm.FieldConcatenation.plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2a3ccc3680d0389" Name="Veritec.Crm.FieldConcatenation.plugins.ConfigurationNaming">
+      <FriendlyName>3561debe-e21c-4245-b384-2b6156954a20</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

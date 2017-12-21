@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66ECA156-16E4-4F2B-9B73-3F4EC9960AA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Project1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\Entity.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\main\{700b140c-aae6-4055-b4f6-0cdcdd86e2b4}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\FormXml\mobile\{9fe948f2-1594-4c7d-ae4f-b47111d9eb80}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\RibbonDiff.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{0d371aff-4ce4-e711-84ef-0050568840bf}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{3d1df9d9-6028-4c6c-9f0f-129632a36d3c}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{48d4e0d4-64cf-4dcd-a9b5-49699df3b267}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{582bdb33-bbfe-4235-867a-a9e4061d9e04}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{858a263a-ff09-441c-b71f-be5db60141bb}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{b4698e4a-4928-445a-9d4a-a3d98ed81605}.xml" />
+    <Content Include="Entities\ver_fieldconcatenationconfiguration\SavedQueries\{dd45abe8-e73d-4396-b8df-93b2ec13fca4}.xml" />
+    <Content Include="Other\Customizations.xml" />
+    <Content Include="Other\Relationships.xml" />
+    <Content Include="Other\Relationships\Organization.xml" />
+    <Content Include="Other\Relationships\SystemUser.xml" />
+    <Content Include="Other\Relationships\ver_fieldconcatenationconfiguration.xml" />
+    <Content Include="Other\Solution.xml" />
+    <Content Include="PluginAssemblies\VeritecCrmFieldConcatenationplugins-26B833C4-1146-4E26-8210-1667D06086EF\VeritecCrmFieldConcatenationplugins.dll" />
+    <Content Include="PluginAssemblies\VeritecCrmFieldConcatenationplugins-26B833C4-1146-4E26-8210-1667D06086EF\VeritecCrmFieldConcatenationplugins.dll.data.xml" />
+    <Content Include="SdkMessageProcessingSteps\{6b7fdff8-50e4-e711-84ef-0050568840bf}.xml" />
+    <Content Include="SdkMessageProcessingSteps\{a29f3f24-51e4-e711-84ef-0050568840bf}.xml" />
+    <Content Include="SdkMessageProcessingSteps\{be0a8e88-51e4-e711-84ef-0050568840bf}.xml" />
+    <Content Include="SdkMessageProcessingSteps\{c08a4d1a-51e4-e711-84ef-0050568840bf}.xml" />
+    <Content Include="Workflows\LockEntityLogicalNameandFieldNameaftercreation-2694769A-52E4-E711-84EF-0050568840BF.xaml.data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Workflows\LockEntityLogicalNameandFieldNameaftercreation-2694769A-52E4-E711-84EF-0050568840BF.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

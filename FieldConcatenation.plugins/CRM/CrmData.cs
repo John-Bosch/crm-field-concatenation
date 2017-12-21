@@ -1,4 +1,4 @@
-﻿namespace FieldConcatenation.plugins.CRM
+﻿namespace Veritec.Crm.FieldConcatenation.plugins.CRM
 {
     internal static class CrmData
     {
@@ -9,8 +9,8 @@
         public const string FieldConcatenationConfiguration_FieldName = "ver_fieldname";
         public const string FieldConcatenationConfiguration_FormatString = "ver_formatstring";
 
-        public const string FieldConcatenationPluginAssemblyName = "FieldConcatenation.Plugins";
-        public const string FieldConcatenationPluginTypeName = "FieldConcatenation.plugins.ConcatenateFields";
+        public const string FieldConcatenationPluginAssemblyName = "Veritec.Crm.FieldConcatenation.Plugins";
+        public const string FieldConcatenationPluginTypeName = "Veritec.Crm.FieldConcatenation.plugins.ConcatenateFields";
 
         public const string SdkMessageProccessingStepEntityName = "sdkmessageprocessingstep";
         public const string SdkMessageProccessingStep_Id = "sdkmessageprocessingstepid";

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{2694769a-52e4-e711-84ef-0050568840bf}" Name="Lock Entity Logical Name and Field Name after creation">
+  <XamlFileName>/Workflows/LockEntityLogicalNameandFieldNameaftercreation-2694769A-52E4-E711-84EF-0050568840BF.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>2</Category>
+  <Mode>1</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <RunAs>1</RunAs>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <PrimaryEntity>ver_fieldconcatenationconfiguration</PrimaryEntity>
+  <ProcessTriggers>
+    <ProcessTrigger processtriggerid="{3094769a-52e4-e711-84ef-0050568840bf}">
+      <event>load</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>ver_fieldconcatenationconfiguration</primaryentitytypecode>
+    </ProcessTrigger>
+    <ProcessTrigger processtriggerid="{3194769a-52e4-e711-84ef-0050568840bf}">
+      <controltype>1</controltype>
+      <controlname>createdby</controlname>
+      <event>change</event>
+      <iscustomizable>1</iscustomizable>
+      <primaryentitytypecode>ver_fieldconcatenationconfiguration</primaryentitytypecode>
+    </ProcessTrigger>
+  </ProcessTriggers>
+</Workflow>

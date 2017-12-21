@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<systemform>
+  <formid>{700b140c-aae6-4055-b4f6-0cdcdd86e2b4}</formid>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <FormPresentation>1</FormPresentation>
+  <FormActivationState>1</FormActivationState>
+  <form>
+    <tabs>
+      <tab verticallayout="true" id="{ed6f842d-283a-4b5a-8eac-521c46a8f332}" IsUserDefined="1">
+        <labels>
+          <label description="General" languagecode="1033" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section showlabel="false" showbar="false" IsUserDefined="0" id="{4c01580a-3ce3-478e-8f5d-4b9d2b7f12d6}">
+                <labels>
+                  <label description="General" languagecode="1033" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{4ebc29a6-07c2-56a1-0ee8-7c78dd6ae4ae}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Entity Logical Name" languagecode="1033" />
+                      </labels>
+                      <control id="ver_entitylogicalname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ver_entitylogicalname" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{5765b8b5-70a3-514d-5948-cb38ec548568}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Field Name" languagecode="1033" />
+                      </labels>
+                      <control id="ver_fieldname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ver_fieldname" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{736a982d-1a87-ee25-5bb8-c9b2085bec37}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Format String" languagecode="1033" />
+                      </labels>
+                      <control id="ver_formatstring" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ver_formatstring" disabled="false" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+      <tab name="tab_2" id="{0d326baa-285a-00c1-70e0-64905ea0661e}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+        <labels>
+          <label description="Administration" languagecode="1033" />
+        </labels>
+        <columns>
+          <column width="100%">
+            <sections>
+              <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{861c7a1d-e7ab-c106-b11a-8ac1309890db}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                <labels>
+                  <label description="Section" languagecode="1033" />
+                </labels>
+                <rows>
+                  <row>
+                    <cell id="{31676f91-a25f-4045-a1ee-264e1713cbb7}">
+                      <labels>
+                        <label description="Name" languagecode="1033" />
+                      </labels>
+                      <control id="ver_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="ver_name" />
+                    </cell>
+                    <cell id="{4a6e7370-6779-654a-c28d-4ae608e8a817}" showlabel="false" userspacer="true">
+                      <labels>
+                        <label description="" languagecode="1033" />
+                      </labels>
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{8ee0906b-31bb-c531-830c-674c18ddae08}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Created By" languagecode="1033" />
+                      </labels>
+                      <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                    </cell>
+                    <cell id="{edb66a82-a6bb-d5c7-c326-c213ecc199b5}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Created On" languagecode="1033" />
+                      </labels>
+                      <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                    </cell>
+                  </row>
+                  <row>
+                    <cell id="{66532271-3159-32d0-a50b-72635557aaba}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Modified By" languagecode="1033" />
+                      </labels>
+                      <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                    </cell>
+                    <cell id="{c4944ca6-7c39-5431-a4c3-e8b9b0e9d950}" showlabel="true" locklevel="0">
+                      <labels>
+                        <label description="Modified On" languagecode="1033" />
+                      </labels>
+                      <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                    </cell>
+                  </row>
+                </rows>
+              </section>
+            </sections>
+          </column>
+        </columns>
+      </tab>
+    </tabs>
+    <Navigation>
+      <NavBar></NavBar>
+      <NavBarAreas>
+        <NavBarArea Id="Info">
+          <Titles>
+            <Title LCID="1033" Text="Common" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Sales">
+          <Titles>
+            <Title LCID="1033" Text="Sales" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Service">
+          <Titles>
+            <Title LCID="1033" Text="Service" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="Marketing">
+          <Titles>
+            <Title LCID="1033" Text="Marketing" />
+          </Titles>
+        </NavBarArea>
+        <NavBarArea Id="ProcessCenter">
+          <Titles>
+            <Title LCID="1033" Text="Process Sessions" />
+          </Titles>
+        </NavBarArea>
+      </NavBarAreas>
+    </Navigation>
+  </form>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <LocalizedNames>
+    <LocalizedName description="Information" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="A form for this entity." languagecode="1033" />
+  </Descriptions>
+</systemform>
